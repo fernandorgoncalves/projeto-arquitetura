@@ -82,11 +82,11 @@ p{
 .jc-space-between{
   justify-content: space-between;
 }
-@media (max-width: 768pc){
+@media (max-width: 768px){
   .container {
     width: 90%;
   }
   .mobile-fd-collumn{
-    width: 90%;
+    flex-direction: column;
   }
 }
