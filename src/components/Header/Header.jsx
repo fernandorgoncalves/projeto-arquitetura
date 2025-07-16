@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from '../Button/Button'
 
 import "./Header.css";
 import Logo from "../../assets/dnc-logo.svg";
@@ -10,6 +11,11 @@ function Header() {
           <Link to={"/"}>
             <img src={Logo} alt="" />
           </Link>
+          <div className="mobile-menu">
+              <Button buttonStyle="secondary">
+                Menu
+              </Button>
+          </div>
 
           <nav>
             <ul className="d-flex">
