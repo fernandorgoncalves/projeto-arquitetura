@@ -33,6 +33,23 @@ a{
 .grey-1-color{
   color: #4D5053 ;
 }
+
+/*Form*/
+.form-input{
+  border: none;
+  border-bottom: 1px solid #292F36;
+  color: #292F36;
+  font-size: 22px;
+  font-family: "Jost", sans-serif;
+  padding: 0 0 13px 0;
+  outline: none;
+  width: 100%;
+}
+
+.form-input::placeholder{
+  color: #292F36;
+  opacity: 1;
+}
 /*typograph*/
 h1,h2,h3,h4,h5,h6 {
   font-family: "DM Serif Display", serif;
