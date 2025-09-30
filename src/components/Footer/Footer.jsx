@@ -30,16 +30,16 @@ function Footer() {
               {appContext.languages[appContext.language].general.footerLogoText}
             </p>
             <div className="d-flex social-links">
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/fernando.r.goncalve" target="_blank">
                 <img src={FacebookIcon} alt="" />
               </a>
               <a href="#" target="_blank">
                 <img src={TwitterIcon} alt="" />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/fernandorgonc/" target="_blank">
                 <img src={InstagramIcon} alt="" />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/in/fernandorgoncalves/" target="_blank">
                 <img src={LinkedinIcon} alt="" />
               </a>
             </div>
