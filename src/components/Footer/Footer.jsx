@@ -73,16 +73,16 @@ function Footer() {
             <div className="footer-col">
               <h3>{appContext.languages[appContext.language].menu.contact}</h3>
               <p className="grey-1-color">
-                R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP
-                12243-030{" "}
+                R. de cima, 61 – Jardim Bairro | São Paulo – SP | CEP
+                02234-001{" "}
               </p>
-              <p className="grey-1-color">suporte@escoladnc.com.br</p>
+              <p className="grey-1-color">fernandorgoncalves@hotmail.com</p>
               <p className="grey-1-color">(19) 99187-4342</p>
             </div>
           </div>
         </div>
         <div className="d-flex jc-space-between footer-copy">
-          <p className="grey-1-color">Copyright © DNC - 2025</p>
+          <p className="grey-1-color">Copyright © FernadoArq- 2025</p>
           <div className="langs-area d-flex">
             <Button buttonStyle="unstyled" onClick={() => changeLanguage("br")}>
               <img src={BrazilIcon} height="29px" />
