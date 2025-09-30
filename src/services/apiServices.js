@@ -2,7 +2,7 @@
 export const getApiData = async (endpoint) => {
 
   try {
-    const url = new URL(`/api/${endpoint}`, window.location.origin);
+    const url = new URL(`https://dnc-react-api.vercel.app/files/${endpoint}`);
     const response = await fetch(url, {
       method: "GET",
     });
