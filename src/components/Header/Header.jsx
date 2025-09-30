@@ -21,7 +21,7 @@ const appContext = useContext(AppContext)
       <div className="container">
         <div className="al-center d-flex jc-space-between">
           <Link to={"/"}>
-            <img src={Logo} alt="" height={'280px'}/>
+            <img src={Logo} alt="" height={'200px'}/>
           </Link>
           <div className="mobile-menu">
               <Button buttonStyle="secondary" onClick={toggleMenu}>

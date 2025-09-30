@@ -25,7 +25,7 @@ function Footer() {
       <div className="container">
         <div className="d-flex jc-space-between mobile-fd-collumn">
           <div className="footer-logo-col">
-            <img src={Logo} className="footer-logo" />
+            <img src={Logo} className="footer-logo" height={'150px'} />
             <p className="grey-1-color">
               {appContext.languages[appContext.language].general.footerLogoText}
             </p>
