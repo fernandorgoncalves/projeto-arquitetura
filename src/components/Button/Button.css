@@ -12,7 +12,7 @@
 /*PRIMARY*/
 .button.primary {
     background-color: #0C70F2;
-    color: white;
+    color: aliceblue;
 }
 .button.primary:hover{
     background-color: #0056b3;
@@ -30,7 +30,14 @@
 .button.outline {
     background-color: white;
     border: 2px solid #0C70F2 ;
-    color: #0C70F2;
+    
+}
+/* Unstyled */
+.button.unstyled {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 .button.outline:hover{
     background-color: #0C70F2;

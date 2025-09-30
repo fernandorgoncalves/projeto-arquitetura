@@ -1,6 +1,10 @@
 import "./ContactForm.css";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+//CONTEXT
+import { AppContext } from "../../context/AppContext";
+
 
 function ContactForm() {
   const [isFormValid, setIsFormValid] = useState(false);
@@ -59,9 +63,11 @@ function ContactForm() {
     });
   };
 
+    const appContext = useContext(AppContext);
+
   return (
     <div className="contact-form d-flex fd-collumn al-center">
-      <h2>We love meeting new people and helping them.</h2>
+      <h2>{appContext.languages[appContext.language].contact.title}</h2>
       <form onSubmit={handleSubmit}>
         <div className="d-flex form-group">
           <input
@@ -69,7 +75,7 @@ function ContactForm() {
             className="form-input"
             name="name"
             id="name"
-            placeholder="Name *"
+            placeholder={appContext.languages[appContext.language].contact.pl1}
             onChange={handleChange}
           />
           <input
@@ -77,7 +83,7 @@ function ContactForm() {
             className="form-input"
             name="email"
             id="email"
-            placeholder="Email *"
+            placeholder={appContext.languages[appContext.language].contact.pl2}
             onChange={handleChange}
           />
         </div>
@@ -86,20 +92,20 @@ function ContactForm() {
             className="form-input"
             name="message"
             id="message"
-            placeholder="Mensagem *"
+            placeholder={appContext.languages[appContext.language].contact.pl3}
             rows="4"
             onChange={handleChange}
           ></textarea>
         </div>
         <div className="al-center d-flex jc-end form-group">
           <div>
-            
+            {formSubmitted && <p className="text-primary">{appContext.languages[appContext.language].contact.sucessMsg}</p>}
             <Button
               type="submit"
               buttonStyle="secondary"
               disabled={!isFormValid || formSubmitLoading}
             >
-              Enviar
+              {appContext.languages[appContext.language].general.send}
             </Button>
           </div>
         </div>
