@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 
 import "./Header.css";
-import Logo from "../../assets/dnc-logo.svg";
+import Logo from "../../assets/logo.svg";
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ const appContext = useContext(AppContext)
       <div className="container">
         <div className="al-center d-flex jc-space-between">
           <Link to={"/"}>
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" height={'280px'}/>
           </Link>
           <div className="mobile-menu">
               <Button buttonStyle="secondary" onClick={toggleMenu}>

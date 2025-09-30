@@ -8,7 +8,7 @@ import FacebookIcon from "../../assets/facebook-icon.svg";
 import TwitterIcon from "../../assets/twitter-icon.svg";
 import LinkedinIcon from "../../assets/linkedin-icon.svg";
 import InstagramIcon from "../../assets/instagram-icon.svg";
-import Logo from "../../assets/dnc-logo.svg";
+import Logo from "../../assets/logo.svg";
 
 import Button from "../Button/Button";
 //Context
